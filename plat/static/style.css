@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    background-color: black;
+    height: 89vh;
+}
+
+.welcome {
+    height: 100%;
+}
+
+.username-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.username-input {
+    background-color: #373131;
+    text-align: center;
+    border: none;
+    width: 22%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 10px;
+    color: white;
+    min-width: 250px;
+}
+
+.username-input::placeholder {
+    color: white;
+}
+
+.btn {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    width: 15%;
+    background-color: #4E00B1;
+    color: white;
+    border: none;
+    min-width: 150px;
+}
+
+.chat {
+    height: 89vh;
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+
+.message-area {
+    background: #373131;
+    width: 70%;
+    height: 100%;
+    overflow-y: auto;
+    list-style-type: none;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.message {
+    background-color: #373131;
+    color: white;
+    border: none;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    height: fit-content;
+    width: 100%;
+}
+
+.container {
+    width: 50%;
+    min-width: 250px;
+}
+
+.message::placeholder {
+    color: white;
+}
+
+.menu {
+    margin-top: 2rem;
+}
+
+.message-form {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.sent-message {
+    height: fit-content;
+}
+
+.btn-color {
+    width: 115px;
+    border: none;
+    height: 20px;
+}
+
+.red {
+    background-color: #FF0000;
+}
+
+.white {
+    background-color: white;
+}
+
+.blue {
+    background-color: #0038FF;
+}
+
+.purple {
+    background-color: #CC00FF;
+}
+
+.yellow {
+    background-color: #FAFF00;
+}
+
+.grey {
+    background-color: #D9D9D9;
+}
+
+.selected {
+    border: 5px solid orange;
+}
+
+.emojie {
+    border: none;
+    background: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.emojies {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.users-counter {
+    color: white;
+    width: 30%;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 24px;
+}
+
+.wrapper {
+    display: flex;
+    height: 75%;
+}

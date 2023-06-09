@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="welcome">
+        <form class="username-form" action="">
+            <input class="username-input" type="text" placeholder="Введите свой никнейм" autofocus>
+            <button class="btn sent-username" type="buton">Продолжить</button>
+        </form>
+    </div>
+    <div class="chat" style='display: none;'>
+        <div class="wrapper">
+            <ul class="message-area"></ul>
+            <div class="users-counter"></div>
+        </div>
+        <div class="menu">
+            <form action="" class="message-form">
+                <div class="container">
+                    <input type="text" class="message" placeholder="Введите текст">
+                    <div class="emojies">
+                        <button type="button" class="emojie">&#128540;</button>
+                        <button type="button" class="emojie">&#128513;</button>
+                        <button type="button" class="emojie">&#128514;</button>
+                        <button type="button" class="emojie">&#128515;</button>
+                        <button type="button" class="emojie">&#128516;</button>
+                        <button type="button" class="emojie">&#128517;</button>
+                    </div>
+                </div>
+                <div class="colors">
+                    <button type="button" class="btn-color red" data-color="#FF0000"></button>
+                    <button type="button" class="btn-color white" data-color="white"></button>
+                    <button type="button" class="btn-color blue" data-color="#0038FF"></button>
+                    <button type="button" class="btn-color purple" data-color="#CC00FF"></button>
+                    <button type="button" class="btn-color yellow" data-color="#FAFF00"></button>
+                    <button type="button" class="btn-color grey selected" data-color="#D9D9D9"></button>
+                </div>
+                <button class="btn sent-message">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="./client.js"></script>
+</body>
+</html>
